@@ -85,6 +85,7 @@ app.get('/products/:id', async(req,res)=>{
      const product= await productModel.findByIdAndDelete(id)
      if(!product){
         //can't find product with id 
+        // hello 
 
         return res.status(500).send(`can't find product with ${id}`)
      }
